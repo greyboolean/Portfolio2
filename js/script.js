@@ -88,51 +88,6 @@ modalCloses.forEach((modalClose) => {
     })
 })
 
-// /* Portfolio */
-
-// // let swiper = new Swiper('.portfolio-container', {
-// //     cssMode: true,
-// //     navigation: {
-// //         nextE: '.swiper-button-next',
-// //         prevEl: '.swiper-button-prev',
-// //     },
-// //     pagination: {
-// //         el: '.swiper-pagination'
-// //     },
-// //     mousewheel: true,
-// //     keyboard: true,
-// // });
-// let swiperPortfolio = new Swiper('.portfolio-container', {
-//     cssMode: true,
-//     loop: true,
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
-//     },
-// });
-
-// /* Testimonial */
-
-// let swiperTestimonial = new Swiper('.testimonial-container', {
-//     loop: true,
-//     grabCursor: true,
-//     spaceBetween: 48,
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
-//         dynamicBullets: true,
-//     },
-//     breakpoints: {
-//         568: {
-//             slidesPerView: 2,
-//         }
-//     }
-// });
-
 /* Scroll Section */
 
 const sections = document.querySelectorAll('section[id]');
@@ -225,12 +180,48 @@ themeButton.addEventListener('click', () => {
         console.log(localStorage.getItem('selected-theme'));
 })
 
+/* Swiper */
+
+// /* Portfolio */
+
+// let swiperPortfolio = new Swiper('.portfolio-container', {
+//     cssMode: true,
+//     loop: true,
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+// });
+
+// /* Testimonial */
+
+// let swiperTestimonial = new Swiper('.testimonial-container', {
+//     loop: true,
+//     grabCursor: true,
+//     spaceBetween: 48,
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//         dynamicBullets: true,
+//     },
+//     breakpoints: {
+//         568: {
+//             slidesPerView: 2,
+//         }
+//     }
+// });
+
 /* Portfolio */
 
 const swiperPortfolio = new Swiper('.portfolio-container', {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
     navigation: {
       nextEl: '.swiper-button-next',
@@ -242,9 +233,11 @@ const swiperPortfolio = new Swiper('.portfolio-container', {
 
 var swiper = new Swiper(".testimonial-container", {
     loop: true,
+    grabCursor: true,
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
+      clickable: true,
     },
     breakpoints: {
         568: {
