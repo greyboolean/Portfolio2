@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap');
 
 :root {
-
-    /* Colors */
-
     --hue-color: 250;
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -17,34 +14,9 @@
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-
-    /* Fonts */
-
-    --big-font-size: 2rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1.125rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
-}
-
-/* Responsive fonts */
-
-@media screen and (min-width: 968px) {
-    :root {
-        --big-font-size: 3rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: 0.875rem;
-        --smaller-font-size: 0.813rem;
-    }
 }
 
 /* Dark theme colors */
-
 body.dark-theme {
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
     --title-color: hsl(var(--hue-color), 8%, 95%);
@@ -280,7 +252,7 @@ img {
 }
 
 .home-title {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .home-subtitle {
@@ -435,7 +407,7 @@ img {
 }
 
 .skills-title {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
 }
 
 .skills-subtitle {
@@ -460,7 +432,7 @@ img {
 }
 
 .skills-name {
-    font-size: 0.938rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -707,17 +679,11 @@ img {
     visibility: visible;
 }
 
-/* Swiper */
-
-:root {
-    --swiper-theme-color: var(--first-color)!important;
-}
-
 /* Portfolio */
 
-/* .portfolio-container {
+.portfolio-container {
     overflow: initial;
-} */
+}
 
 .portfolio-content {
     padding: 0 1.5rem;
@@ -742,7 +708,7 @@ img {
     transform: translateX(0.25rem);
 }
 
-/* .swiper-button-prev::after, .swiper-button-next::after {
+.swiper-button-prev::after, .swiper-button-next::after {
     content: ''!important;
 }
 
@@ -773,29 +739,6 @@ img {
 
 .swiper-button-prev, .swiper-button-next, .swiper-pagination-bullet {
     outline: none;
-} */
-
-.swiper-pagination-portfolio {
-    position: initial!important;
-}
-
-.portfolio-controls {
-    display: flex;
-    align-items: center!important;
-    margin-top: 1rem;
-    padding: 0 23%;
-}
-
-.swiper-button-next, .swiper-button-prev {
-    position: initial!important;
-    width: initial!important;
-    height: initial!important;
-    margin-top: initial!important;
-}
-
-.swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 1rem!important;
-    font-weight: 900!important;
 }
 
 /* Projects */
@@ -828,6 +771,11 @@ img {
 }
 
 /* Testimonials */
+
+/* new */
+.testimonial .container {
+    margin: 0 1.5rem;
+}
 
 .testimonial-data, .testimonial-header {
     display: flex;
@@ -863,16 +811,12 @@ img {
     color: var(--first-color);
 }
 
-/* .testimonial-container {
+.testimonial-container {
     overflow: hidden!important;
-} */
+}
 
 .swiper .swiper-pagination-testimonial {
     bottom: 0!important;
-}
-
-.testimonial-content {
-    padding: 0 1.5rem;
 }
 
 /* Contact */
@@ -1224,10 +1168,10 @@ img {
         padding-top: 0.8rem;
     }
 
-    /* custom
+    /* custom */
     .testimonial .container {
         margin: 0;
-    } */
+    }
 
     .footer-container {
         grid-template-columns: repeat(3, 1fr);
@@ -1266,7 +1210,7 @@ img {
     .portfolio-content {
         column-gap: 5rem;
     }
-    /* .swiper-portfolio-icon {
+    .swiper-portfolio-icon {
         font-size: 3.5rem;
     }
     .swiper-button-prev {
@@ -1277,7 +1221,7 @@ img {
     }
     .swiper-horizontal > .swiper-pagination-bullets {
         bottom: -4.5rem!important;
-    } */
+    }
 
     .contact-form {
         width: 460px;

@@ -88,50 +88,50 @@ modalCloses.forEach((modalClose) => {
     })
 })
 
-// /* Portfolio */
+/* Portfolio */
 
-// // let swiper = new Swiper('.portfolio-container', {
-// //     cssMode: true,
-// //     navigation: {
-// //         nextE: '.swiper-button-next',
-// //         prevEl: '.swiper-button-prev',
-// //     },
-// //     pagination: {
-// //         el: '.swiper-pagination'
-// //     },
-// //     mousewheel: true,
-// //     keyboard: true,
-// // });
-// let swiperPortfolio = new Swiper('.portfolio-container', {
+// let swiper = new Swiper('.portfolio-container', {
 //     cssMode: true,
-//     loop: true,
 //     navigation: {
-//         nextEl: '.swiper-button-next',
+//         nextE: '.swiper-button-next',
 //         prevEl: '.swiper-button-prev',
 //     },
 //     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
+//         el: '.swiper-pagination'
 //     },
+//     mousewheel: true,
+//     keyboard: true,
 // });
+let swiperPortfolio = new Swiper('.portfolio-container', {
+    cssMode: true,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
 
-// /* Testimonial */
+/* Testimonial */
 
-// let swiperTestimonial = new Swiper('.testimonial-container', {
-//     loop: true,
-//     grabCursor: true,
-//     spaceBetween: 48,
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
-//         dynamicBullets: true,
-//     },
-//     breakpoints: {
-//         568: {
-//             slidesPerView: 2,
-//         }
-//     }
-// });
+let swiperTestimonial = new Swiper('.testimonial-container', {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 48,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+    breakpoints: {
+        568: {
+            slidesPerView: 2,
+        }
+    }
+});
 
 /* Scroll Section */
 
@@ -224,31 +224,3 @@ themeButton.addEventListener('click', () => {
         localStorage.setItem('selected-theme', currentTheme);
         console.log(localStorage.getItem('selected-theme'));
 })
-
-/* Portfolio */
-
-const swiperPortfolio = new Swiper('.portfolio-container', {
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-});
-
-/* Testimonial */
-
-var swiper = new Swiper(".testimonial-container", {
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
-    breakpoints: {
-        568: {
-            slidesPerView: 2,
-        }
-    }
-});
